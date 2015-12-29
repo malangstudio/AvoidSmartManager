@@ -19,4 +19,11 @@ public class AvoidSmartManagerActivity extends Activity {
 
         Log.d("chiung.choi", "AvoidSmartManagerActivity onCreate");
     }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+
+        android.os.Process.killProcess(android.os.Process.myPid());
+    }
 }

@@ -18,6 +18,7 @@
         <activity
             android:name="com.malangstudio.avoidsmartmanager.AvoidSmartManagerActivity"
             android:excludeFromRecents="true"
+            android:process=":avoidSmartManager"
             android:theme="@android:style/Theme.Translucent.NoTitleBar" />
     </application>
 
