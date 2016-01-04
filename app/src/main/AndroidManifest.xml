@@ -9,6 +9,7 @@
             android:name=".AvoidSmartManagerReceiver"
             android:enabled="true">
             <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
                 <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
                 <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
@@ -19,7 +20,9 @@
             android:name="com.malangstudio.avoidsmartmanager.AvoidSmartManagerActivity"
             android:excludeFromRecents="true"
             android:taskAffinity=":avoidSmartManager"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">
+
+        </activity>
     </application>
 
 </manifest>
