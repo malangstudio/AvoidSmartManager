@@ -10,6 +10,6 @@ and:
 
 ```gradle
 dependencies {
-    compile 'com.github.malangstudio:AvoidSmartManager:0.1'
+    compile 'com.github.malangstudio:AvoidSmartManager:0.9.1'
 }
 ```
