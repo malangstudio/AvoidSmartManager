@@ -4,7 +4,6 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.net.ConnectivityManager;
 
 /**
  * Created by Chiung Choi on 2015-12-20.
@@ -16,8 +15,7 @@ public class AvoidSmartManagerReceiver extends BroadcastReceiver {
     public void onReceive(Context context, Intent intent) {
         if(Intent.ACTION_BOOT_COMPLETED.equals(intent.getAction())
                 || Intent.ACTION_POWER_CONNECTED.equals(intent.getAction())
-                || Intent.ACTION_POWER_DISCONNECTED.equals(intent.getAction())
-                || ConnectivityManager.CONNECTIVITY_ACTION.equals(intent.getAction())) {
+                || Intent.ACTION_POWER_DISCONNECTED.equals(intent.getAction())) {
             boolean isSmartManagerExist = false;
 
             try {
